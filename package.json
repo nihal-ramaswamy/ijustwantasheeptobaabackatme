@@ -14,11 +14,12 @@
     "react-scripts": "4.0.3",
     "react-speech-recognition": "^3.8.0",
     "redux": "^4.0.5",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "homepage": "https://nihal-ramaswamy.github.io/ijustwantasheeptobaabackatme/"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
