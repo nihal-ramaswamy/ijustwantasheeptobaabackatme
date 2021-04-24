@@ -14,8 +14,7 @@
     "react-scripts": "4.0.3",
     "react-speech-recognition": "^3.8.0",
     "redux": "^4.0.5",
-    "web-vitals": "^1.1.1",
-    "homepage": "https://nihal-ramaswamy.github.io/ijustwantasheeptobaabackatme/"
+    "web-vitals": "^1.1.1"
   },
   "scripts": {
     "predeploy": "npm run build",
