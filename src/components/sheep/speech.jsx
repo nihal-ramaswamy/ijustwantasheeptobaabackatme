@@ -18,7 +18,7 @@ const MagicButton = () => {
                     dispatch(openSheepMouth());
             },
             isFuzzyMatch: true,
-            fuzzyMatchingThreshold: 0.4
+            fuzzyMatchingThreshold: 0.7
         }
     ]
 
