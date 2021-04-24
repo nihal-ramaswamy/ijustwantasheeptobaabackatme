@@ -49,7 +49,7 @@ const MagicButton = () => {
                 <div>
                     <Button clickHandler = {() => openSheepMouthHandler()}> Listen </Button>
                     <Button clickHandler = {SpeechRecognition.stopListening}> Stop </Button>
-                    <Button clickHandler = {reset}> Reset </Button>
+                    <Button clickHandler = {resetTranscript}> Reset </Button>
                     <p>{ transcript, resetTranscript }</p>
                 </div>
             )
