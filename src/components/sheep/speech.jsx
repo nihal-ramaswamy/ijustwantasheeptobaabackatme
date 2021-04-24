@@ -22,7 +22,7 @@ const MagicButton = () => {
         }
     ]
 
-    const { transcript } = useSpeechRecognition({commands});
+    const { transcript, resetTranscript } = useSpeechRecognition({commands});
     const dispatch = useDispatch();
 
     const openSheepMouthHandler = () => {
@@ -49,6 +49,8 @@ const MagicButton = () => {
                 <div>
                     <Button clickHandler = {() => openSheepMouthHandler()}> Listen </Button>
                     <Button clickHandler = {SpeechRecognition.stopListening}> Stop </Button>
+                    <Button clickHandler = {reset}> Reset </Button>
+                    <p>{ transcript, resetTranscript }</p>
                 </div>
             )
         }
