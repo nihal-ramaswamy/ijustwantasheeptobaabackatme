@@ -36,14 +36,28 @@ const MagicButton = () => {
         }
     }, []);
 
-    if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-        return null
+    const isSupported = () => {
+        if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+            return (
+                    <div>
+                        <p> Not supported on this browser uwu :( </p>
+                    </div>
+            )
+        }
+        else {
+            return (
+                <div>
+                    <Button clickHandler = {() => openSheepMouthHandler()}> Listen </Button>
+                    <Button clickHandler = {SpeechRecognition.stopListening}> Stop </Button>
+                </div>
+            )
+        }
     }
+
 
     return (
         <div>
-            <Button clickHandler = {() => openSheepMouthHandler()}> Listen </Button>
-            <Button clickHandler = {SpeechRecognition.stopListening}> Stop </Button>
+            {isSupported()}
         </div>
     )
 }
