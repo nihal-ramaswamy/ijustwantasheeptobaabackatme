@@ -5,7 +5,7 @@ const About = () => {
 			Did you ever baa at a sheep and it did not baa back at you?<br />
 			Me neither.<br />
 			Meet NotMerino1.0 !!<br />
-			NotMerino2.0 will always baa back at you when you speak to him. That is my gaurantee :)<br />
+			NotMerino2.0 will always baa back at you when you speak to him. That is my guarantee :)<br />
 		</p>
 	)
 }
